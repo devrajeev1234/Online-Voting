@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/VoteSystem/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Voting System</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const path = params.get('path');
+      if (path) {
+        window.history.replaceState(null, null, window.location.pathname + '#/' + path);
+      }
+    </script>
+    <script type="module" crossorigin src="/VoteSystem/assets/index-CJ9SBMpf.js"></script>
+    <link rel="stylesheet" crossorigin href="/VoteSystem/assets/index-BrVWfL2K.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+
