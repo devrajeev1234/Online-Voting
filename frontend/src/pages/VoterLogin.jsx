@@ -95,11 +95,6 @@ function VoterLogin() {
               Voter Authentication
             </h2>
 
-            <div className="glass-strong border-l-4 border-yellow-600 p-4 mb-6 rounded-r">
-              <p className="text-sm text-yellow-900">
-                <strong>DEMO:</strong> Use mock identifiers only. Example: AadhaarID: 111122223333, VoterID: VOTER001, Phone: 9000000001
-              </p>
-            </div>
 
             {error && (
               <div className="glass-strong border-l-4 border-red-600 p-4 mb-6 rounded-r">
@@ -187,7 +182,7 @@ function VoterLogin() {
             ) : (
               <form onSubmit={handleVerifyOtp} className="space-y-6">
                 <div className="text-center">
-                  <p className="text-gray-700">Enter the 6-digit OTP sent to your mock phone (check server console in demo).</p>
+                  <p className="text-gray-700">Enter the 6-digit OTP sent to your phone.</p>
                 </div>
 
                 <div>

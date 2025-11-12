@@ -79,7 +79,7 @@ function VotePage() {
           <div className="text-6xl mb-6">✅</div>
           <h2 className="text-4xl font-bold text-primary mb-4">Vote Submitted Successfully!</h2>
           <p className="text-xl text-gray-700 mb-6">
-            Thank you for participating in this demo voting system.
+            Thank you for participating in the voting system.
           </p>
           <p className="text-lg text-gray-600">Redirecting to home page...</p>
         </div>

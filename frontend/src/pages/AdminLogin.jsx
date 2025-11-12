@@ -88,13 +88,6 @@ function AdminLogin() {
               Administrator Access
             </h2>
 
-            <div className="glass-strong border-l-4 border-yellow-600 p-4 mb-6 rounded-r">
-              <p className="text-sm text-yellow-900">
-                <strong>DEMO CREDENTIALS:</strong> Username: <code className="bg-yellow-200 px-2 py-1 rounded">nihal</code>, Password: <code className="bg-yellow-200 px-2 py-1 rounded">1234567</code>
-                <br />
-                <strong>OTP:</strong> If enabled, OTP code will be printed to server console (check terminal)
-              </p>
-            </div>
 
             {error && (
               <div className="bg-red-100 border-l-4 border-red-600 p-4 mb-6 rounded-r">
@@ -146,7 +139,7 @@ function AdminLogin() {
                     className="mt-2 w-5 h-5 text-gov-blue focus:ring-gov-blue border-gray-300 rounded"
                   />
                   <label htmlFor="requireOtp" className="ml-3 text-lg text-gray-700">
-                    Require OTP verification (DEMO: Code printed to server console)
+                    Require OTP verification
                   </label>
                 </div>
 
@@ -162,7 +155,7 @@ function AdminLogin() {
               <form onSubmit={handleOtpVerify} className="space-y-6">
                 <div className="bg-blue-100 border-l-4 border-blue-600 p-4 mb-6 rounded-r">
                   <p className="text-blue-900 font-semibold">
-                    OTP code has been generated. Check the server console/terminal for the code.
+                    OTP code has been generated and sent to your registered phone number.
                   </p>
                 </div>
 
